@@ -1,0 +1,589 @@
+body{
+    background-color: #f1f1f1;
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cont1{
+    padding-top: 5%;
+}
+/*Apariencia principal*/
+@media (min-width: 480px){
+    .Cuerpo {
+        background-color: #f1f1f1;
+        padding: 2% 2%;
+        text-align: center; 
+        
+    }
+    .Cuerpo-principal{
+        display: grid;
+        grid-template-columns: 1fr ;
+        text-align: center;
+        grid-gap: 30px;
+        transition: all 0.5s;
+    }
+
+}
+@media (min-width: 768px){
+    .Cuerpo{
+        padding: 2% 2%;
+        text-align: center;
+        height: 110%;
+        
+    }
+    .Cuerpo-principal{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        text-align: center;
+        grid-gap: 3%;
+        margin:0% 3% 3% 3%;
+        transition: all 0.5s;
+        
+    }
+}
+.texto{
+    text-align: justify;
+}
+
+.sombra{
+    -webkit-box-shadow: 10px 17px 56px 7px rgba(195, 195, 195, 0.75);
+    -moz-box-shadow: 10px 17px 56px 7px rgba(226, 226, 226, 0.75);
+    box-shadow: 10px 17px 56px 7px rgba(215, 215, 215, 0.75);
+}
+/*////////////*\\\\\\\\\\\\*/
+
+/*Barra de navegacion*/
+@media (min-width: 768px){
+    ul{
+        list-style-type: aps;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width:100%;
+        background-color:#171717;
+        
+    }
+    .cont{
+        max-width: 50%;
+        padding: 1.5%;
+    }
+    .sobreMi{
+        flex-wrap: nowrap;
+    }
+    
+}
+@media (min-width: 480px){    
+    ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    background-color:#171717;
+    }
+    .cont{
+        min-width: 100%;
+        padding: 1.5%;
+    }
+    .sobreMi{
+        flex-wrap: wrap;
+    }
+
+    
+}
+.botones {
+    display: flex;
+    align-items: center; /* Alinear verticalmente en el centro */
+    padding: 1.5%;
+}
+
+/* Aplica un margen a todos los elementos que son hijos directos de .botones, excepto el último */
+.botones > *:not(:last-child) {
+    margin-right: 10px; /* Ajusta el valor de píxeles según sea necesario */
+}
+
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.active {
+    background-color: #89baf4;
+    width: 15%;
+    transition: all linear 0.5s;
+}
+.inicio{
+    transition: all linear 0.5s;
+    transition-duration: 1s;
+}
+.inicio:hover{
+    width: 10%;
+    background-color: #1e4a80;
+    transition: all linear 1s;
+    
+}
+
+/*////////////*\\\\\\\\\\\\*/
+
+
+/*Baner index*/
+.Banner {
+    background-image: url("istockphoto-1161554818-170667a.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 400px; /* Ajusta la altura según tus necesidades */
+    display: block;
+    color: black;
+    padding-top: 5%;
+ /* Agrega un desenfoque de 5px (ajusta el valor según lo necesites) */
+}
+.Banner svg {
+    position: absolute;
+    bottom: 10px; /* Ajusta la distancia vertical del ícono desde el borde inferior */
+    right: 21%; /* Ajusta la distancia horizontal del ícono desde el borde derecho */
+}
+
+.contenedor{
+    padding: 1%;
+    display:flex;
+}
+/*////////////*\\\\\\\\\\\\*/
+
+/*boton*/
+.btn {
+    background-color: #89baf4;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn1 {
+    background-color: #a2f489;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn2 {
+    background-color: #9789f4;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn3 {
+    background-color: #f48989;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*////////////*\\\\\\\\\\\\*/
+
+
+.centrar{
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+/*Desplegables*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.oculto {
+    display: none;
+    position: absolute;
+    background-color: #d9d5e1;
+    min-width: 160px;
+    transition: linear 1s;
+}
+.dropdown:hover .oculto {
+    width: 70%;
+    display: block;
+    transition: linear 1s;
+}
+/*////////////*\\\\\\\\\\\\*/
+
+
+/*Formulario*/
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 2%;
+}
+.Formulario{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2%;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+/*////////////*\\\\\\\\\\\\*/
+
+/*Clientes/ Hover clientes*/
+.clientes{
+    display: flex;
+    flex-wrap: row;
+    transition: all linear 0.5s;
+    margin-top: 20px;
+}
+.cliente{
+    display: none;
+    background-color: #d9d9d9;
+    min-width: 160px;
+    transition: linear 1s;
+}
+.separacion{
+    margin-bottom: 150px;
+}
+.dropdown:hover .cliente {
+    width: 1000px;
+    display: block;
+    position: absolute;
+    grid-template-rows: 1fr 1fr;
+    transition: linear 1s;
+}
+.img-cliente:hover{
+    transform: scale(90%);
+}
+/*////////////*\\\\\\\\\\\\*/
+
+
+/*Html*/
+::placeholder{
+    font-size: 20px;
+}
+h1{
+    font-size: 40px;
+    color: black
+}
+h2{
+    font-size: 35px;
+}
+p{
+    font-size: 30px;
+}
+a{
+    margin: auto auto auto auto;
+}
+input{
+    margin-top:1%;
+    margin-bottom: 1%;
+    background-color: #d9d9d9;
+    font-size: 15px;
+    height: 25px;
+    width:97%;
+    margin: 1.5%;
+}
+textarea{
+    font-size: 15px;
+    margin-top:1%;
+    margin-bottom: 1%;
+    background-color: #d9d9d9;
+    color: white;
+    width: 100%;
+}
+label{
+    font-size: 25px;
+}
+img{
+    padding:1.5%;
+    border-radius: 5%;
+    margin: auto auto auto auto;
+    transition: all linear 0.5s;
+}
+img:hover{
+    width: 600px;
+    height: 340px;
+    transition: all 1s;
+    transform: rotate(-1deg);
+}
+i{
+    color: white;
+}
+/*////////////*\\\\\\\\\\\\*/
+
+
+/*Tablas*/
+th{
+    padding: 20px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+td{
+    padding: 15px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+
+}
+svg{
+    background-color: rgb(5, 12, 32);
+    border-radius: 50px;
+    transition: all linear 0.5s;
+}
+svg:hover{
+    width: 120px;
+    height: 120px;
+    transition: all linear 0.5s;
+    transition-property:initial;
+}
+.tabla tr{
+    cursor: pointer;
+}
+.tabla tr:hover{
+    background:rgba(224, 234, 255, 0.664);
+}
+/*////////////*\\\\\\\\\\\\*/
+
+/*Extras*/
+
+.cartas {
+    padding: 5%;
+    display: flex;
+    max-width: 60%;
+}
+.card {
+    height: 400px;
+    flex: 1;
+    margin: 0 2px;
+    box-shadow: 0 0 50px #0002;
+    overflow: hidden;
+    border-radius: 4px;
+    transition: .3s;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    filter: grayscale(1);
+}
+.card:active {
+    flex: 3;
+  }
+.card:active img{
+    filter: none;
+}
+@media (max-width: 600px){
+    .cartas{
+      height: 80%;
+      width: 80%;
+    }
+}
+
+.box {
+    display: flex;
+    align-items: stretch;
+}
+.boxes{
+    background-color: #89baf4;
+    width: 50px;
+    height: 100px;
+    margin:1%
+}
+
+.box1 {
+    display: flex;
+    align-items: flex-start;
+    height: 200px;
+}
+.box1>*:first-child {
+      align-self: stretch;
+}
+.box1 .selected {
+      align-self: center;
+      background-color: #89baf4;
+}
+
+  .box2 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    align-content: space-between;
+  }
+  .boxe3 {
+    display: flex;
+    align-self: flex-start ;
+    order: 5;
+}
+
+.box4 {
+    display: flex;
+    align-self: auto;
+}
+
+.box5 {
+    display: flex;
+    align-self: flex-end;
+}
+.box6 {
+    display: flex;
+    align-self: center;
+}
+
+.box7 {
+    display: flex;
+    align-self: baseline;
+}
+
+.container {
+    display: flex;
+}
+  
+.item {
+    background-color: #89baf4;
+    height: 100px;
+    width: 100px;
+}
+  
+.item-center { 
+    background-color: #89baf4;
+    flex-grow: 1; 
+    text-align: center;
+    margin: 0% 1% 0% 1%;
+}
+  
+.item + .item { 
+    margin-left: 2%; 
+}
+.grid{
+    display: grid;
+}
+.grid .boxes{
+    width: 100%;
+}
+.grid1{
+    display: grid;
+}
+.grid1 .boxes{
+    width: 100%;
+    border: 2px solid #f76707
+}
+
+.grid2{
+    display: grid;
+    grid-template-columns: 33% 200px 33%;
+}
+
+.grid3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 20%;
+}
+
+.grid4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+.grid5{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr ;
+}
+
+.grid6{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-container {
+    display: grid;
+}
+.item1{
+    display: grid;
+    background-color: #89baf4;
+    grid-template-columns: 1fr;
+}
+.contenido{
+    display:grid;
+    grid-template-columns: 200px 1fr 100px;
+    background-color: #89baf4;
+    margin: 1% 0% 1% 0%;
+}
+
+.item5{
+    display: grid;
+    background-color: #89baf4;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid7 {
+    display: inline-grid;
+    row-gap: 50px;
+}
+
+.grid8{
+    display: grid;
+    gap: 50px 100px;
+}
+
+.grid9{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+/*////////////*\\\\\\\\\\\\*/
+
+/*Navegadores*/
+.nav1{
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    background-color: #f76707;
+    margin:1%;
+
+}
+.nav2{
+    position: sticky;
+    padding-top: 20px;
+    width: 100%;
+    height: 30px;
+    background-color: #f76707;
+    margin:1%;
+
+}
+
+.cajas{
+    margin: 1%;
+    background-color: #89baf4;
+    width: 100%;
+    height: 600px;
+}
+/*////////////*\\\\\\\\\\\\*/
+
+.calc img:hover{
+    width: 600px;
+    height: 800px;
+}
